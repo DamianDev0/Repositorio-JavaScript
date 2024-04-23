@@ -1,4 +1,4 @@
-function status(){
+function status(){ //se hace una funcion para ver los estados de nergia,clima,y trbajo
     let levelEnergy = prompt("¿Cuál es tu nivel de energía hoy? 0 para mal, 1 para bien");
     let weather = prompt("¿Cómo está el clima el día de hoy? 0 para mal, 1 para bien");
     let levelJob = prompt("¿Cuál es tu nivel de carga laboral? 0 para muy pesada, 1 para bien");
@@ -6,6 +6,7 @@ function status(){
     return {levelEnergy, weather, levelJob};
 }
 
+// se hace la funcion para tomar la decision para el usuario
 function test(){
     let testStatus = status();
     while(i != 1){

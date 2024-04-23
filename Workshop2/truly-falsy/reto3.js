@@ -1,3 +1,5 @@
+
+//se pregunta el usuario para definir que cosas llevar
 function state() {
     let weather = prompt("Como esta el clima el dia de hoy, soleado 0 lluvioso?").toLocaleLowerCase();
     let luggage = parseFloat(prompt("cual es el peso de tu maleta?"));
@@ -7,12 +9,13 @@ function state() {
     alert(`el espacio disponible de tu maleta es de ${spacerest}`);
 
     let init = true;
-
+// se evaluan los datos ngresads por el usuario en este ciclo while
     while (init == true) {
         if (luggage > limit) {
             alert("mi bro debe sacar cosas de esa maleta, estas sobrepasando el peso limite");
             break;
         }
+        // si el dia es lluvioso el usuario debera llevar si o si la sombrilla
         if (weather == "lluvioso" && trip > 4) {
             alert(" con esa cantidad de dias te recomiendo que mejor lleves la sombrilla");
             let weigtumbrella = (parseFloat(prompt("cuanto es el peso de la sombrilla")));
@@ -30,7 +33,7 @@ function state() {
                 }
             }
 
-        } 
+        } // se define de que si el dia es soleado el uauario deberia llevar mas cosas
         if (weather == "soleado") {
             alert("tal vez deberias llevar un accesorio mas");
             let assets = (prompt("que accesorio quisieras llevar?"));

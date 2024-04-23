@@ -1,6 +1,6 @@
 const travel = prompt("¿Cuál es tu lugar de destino?").toLowerCase();
 let x = 1;
-let value_day = 500;
+let value_day = 500; //asignado el valor por dia
 
 while (x < 2) {
     let days = prompt("¿Cuál es la cantidad de días que te quedarás?");

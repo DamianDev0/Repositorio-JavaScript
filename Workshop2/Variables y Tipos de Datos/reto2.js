@@ -2,7 +2,7 @@ let souvenirs = []; //lista vacia para ingresar los datos del usuario
 
 let budget = parseFloat(prompt("Ingrese su presupuesto:")); //se le prunta al usuario su preusupuesto
 
-//se pregunta los dats del souvenir
+//se pregunta los datos del souvenir
 function getSouvenir() {
     let name = prompt("Ingrese el nombre del souvenir:");
     let cost = parseFloat(prompt("Ingrese el costo del souvenir:"));
@@ -11,7 +11,7 @@ function getSouvenir() {
     return { name, cost, available };
 }
 
-
+// se le indica cual survenir desea comprar
 function buySouvenir() {
     let option = prompt("Ingrese el número del souvenir que desea comprar (0 para salir):");
     while (option !== "0" && !isNaN(parseInt(option))) {
@@ -32,6 +32,8 @@ function buySouvenir() {
     }
 }
 
+
+// se muestra los datos ingresados
 function showsouvenirs() {
     console.log("Souvenirs ingresados:");
     souvenirs.forEach((souvenir, index) => {

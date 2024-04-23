@@ -1,3 +1,6 @@
+
+// se pregunta el presupuesto para cada cosa
+
 let budgetInit = parseFloat(prompt("Ingresa tu presupuesto inicial"));
 let budgetFood = parseFloat(prompt("Ingresa lo presupuestado para la comida"));
 let budgetPlace = parseFloat(prompt("Ingresa lo presupuestado para el alojamiento"));
@@ -7,7 +10,7 @@ let budgetEmerge = parseFloat(prompt("Ingresa los gastos en caso de emergencia")
 let budgetGastos = budgetFood + budgetPlace + budgetTrans + budgetEmerge;
 let budgetRest = budgetInit - budgetGastos;
 
-alert(`Tu presupuesto restante es ${budgetRest}`);
+alert(`Tu presupuesto restante es ${budgetRest}`); //se muestra el presupuesto restante 
 
 let extraProducts = [];
 
